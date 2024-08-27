@@ -69,28 +69,6 @@
             animation: fadeIn 2s ease-in-out;
         }
 
-        .floating-heart {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            background-image: url('heart.png'); /* Replace with the path to your heart image */
-            background-size: cover;
-            animation: float 4s infinite ease-in-out, spinHeart 10s infinite linear;
-            top: 10%;
-            left: 10%;
-        }
-
-        .floating-justin {
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            background-image: url('justin-face.png'); /* Replace with the path to your Justin Bieber image */
-            background-size: cover;
-            animation: float 6s infinite ease-in-out, rotate 8s infinite linear;
-            top: 20%;
-            right: 15%;
-        }
-
         section {
             padding: 60px 20px;
             text-align: center;
@@ -107,18 +85,139 @@
             animation: bounce 2s infinite;
         }
 
+        .mainPic img {
+            border: 5px solid #544e527d;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
+        .cat img{
+            position: absolute;
+            top: 17%;
+            left: 2%;
+            width: 350px; 
+            height: 350px;
+            background-image: url('cat.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            transform: rotate(-5deg);
+        }
 
-        .bio, .music, .letter {
-            max-width: 1000px;
-            margin: 0 auto;
-            text-align: left;
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            margin-bottom: 50px;
-            animation: fadeIn 2s ease-in-out;
+        .catWithBag img {
+            position: absolute;
+            top: 58%;
+            left: 85%;
+            width: 100; 
+            height: 100;
+            background-image: url('catWithBag.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
+        }
+
+        .goomba img {
+            position: absolute;
+            top: 75%;
+            left: 62%;
+            width: 135px; 
+            height: 141.7px;
+            background-image: url('goomba.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            transform: rotate(7deg);
+        }
+
+        .mfsDonut img {
+            position: absolute;
+            top: 73%;
+            left: 0%;
+            width: 200px; 
+            height: 205px;
+            background-image: url('mfsDonut.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
+        }
+
+        .mfsShark img {
+            position: absolute;
+            top: 3%;
+            left: 75%;
+            width: 195px; 
+            height: 200px;
+            background-image: url('mfsShark.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            transform: rotate(-8deg);
+        }
+
+        .soloSylvanian img {
+            position: absolute;
+            top: 55%;
+            left: 27%;
+            width: 150px; 
+            height: 185px;
+            background-image: url('soloSylvanian.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            transform: rotate(-15deg);
+        }
+
+        .ghost img {
+            position: absolute;
+            top: 40%;
+            left: 69%;
+            width: 149.5px; 
+            height: 200px;
+            background-image: url('ghost.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
+        }
+
+        .dust img {
+            position: absolute;
+            top: 1.5%;
+            left: 0.5%;
+            width: 150px; 
+            height: 100;
+            background-image: url('dust.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            transform: rotate(10deg);
+        }
+
+        .miffy2 img {
+            position: absolute;
+            top: 82%;
+            left: 19%;
+            width: 100px; 
+            height: 135px;
+            background-image: url('miffy2.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            transform: rotate(10deg);
+        }
+
+        .miffy img {
+            position: absolute;
+            top: 32%;
+            left: 87%;
+            width: 190px; 
+            height: 140;
+            background-image: url('miffy.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            transform: rotate(-25deg);
+        }
+
+        .worm img {
+            position: absolute;
+            top: 87%;
+            left: 38%;
+            width: 190px; 
+            height: 140;
+            background-image: url('worm.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
         }
     </style>
 
@@ -129,16 +228,53 @@
         <p>just trying to survive wad2...</p>
     </header>
 
-    <div class="gallery">
-        <style>
-            img {
-            border: 5px solid #544e527d;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            }
-        </style>
-        <img src="randompfp.jpg" width="300" height="200" style="transform: translate(0px,10px)">
+    <div class="mainPic">
+        <img src="randompfp.jpg" width="400" height="300" style="transform: translate(0px,10px)">
     </div>
+
+    <div class="cat">
+        <img src="cat.png">      
+    </div>
+
+    <div class="catWithBag">
+        <img src="catWithBag.png">  
+    </div>
+
+    <div class="goomba">
+        <img src="goomba.png">  
+    </div>
+
+    <div class="mfsDonut">
+        <img src="mfsDonut.png">  
+    </div>
+
+    <div class="mfsShark">
+        <img src="mfsShark.png" >  
+    </div>
+
+    <div class="soloSylvanian">
+        <img src="soloSylvanian.png">  
+    </div>
+
+    <div class="miffy2">
+        <img src="miffy2.png">  
+    </div>
+
+    <div class="dust">
+        <img src="dust.png">  
+    </div>
+
+    <div class="miffy">
+        <img src="miffy.png">  
+    </div>
+
+    <div class="ghost">
+        <img src="ghost.png">  
+    </div>
+
+    <div class="worm">
+        <img src="worm.png">  
+    </div>
+
 </body>
 </html>
