@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Bieber Forever ♥</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&family=Pacifico&display=swap');
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes heartBeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            25% {
+                transform: scale(1.2);
+            }
+            50% {
+                transform: scale(1.3);
+            }
+            75% {
+                transform: scale(1.2);
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes spinHeart {
+            0% {
+                transform: scale(1) rotate(0deg);
+            }
+            50% {
+                transform: scale(1.2) rotate(360deg);
+            }
+            100% {
+                transform: scale(1) rotate(720deg);
+            }
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #fff0f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            overflow-x: hidden;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 5px solid #ffe0e9;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            animation: bounce 2s infinite;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 4em;
+            font-weight: 600;
+            margin: 0;
+            color: #ffffff;
+            font-family: 'Pacifico', cursive;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+            animation: pulse 2s infinite;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin: 10px 0 20px;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .floating-heart {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-image: url('heart.png'); /* Replace with the path to your heart image */
+            background-size: cover;
+            animation: float 4s infinite ease-in-out, spinHeart 10s infinite linear;
+            top: 10%;
+            left: 10%;
+        }
+
+        .floating-justin {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-image: url('justin-face.png'); /* Replace with the path to your Justin Bieber image */
+            background-size: cover;
+            animation: float 6s infinite ease-in-out, rotate 8s infinite linear;
+            top: 20%;
+            right: 15%;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+            position: relative;
+        }
+
+        h2 {
+            font-size: 3em;
+            margin-bottom: 40px;
+            color: #ff9a9e;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: bounce 2s infinite;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: pulse 3s infinite;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1) rotate(10deg);
+            box-shadow: 0 20px 40px rgba(255, 154, 158, 0.4);
+            animation: rotate 1s ease-in-out;
+        }
+
+        .bio, .music, .letter {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: left;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .bio p, .music p, .letter p {
+            font-size: 1.3em;
+            line-height: 1.8;
+            color: #555;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .bio h2, .music h2, .letter h2 {
+            text-align: center;
+            color: #fe9090;
+            font-family: 'Pacifico', cursive;
+            animation: pulse 2s infinite;
+        }
+
+        .music {
+            margin-top: 50px;
+        }
+
+        .music ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .music li {
+            background-color: #ffe0e9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            animation: heartBeat 1.5s infinite;
+        }
+
+        .letter {
+            background-color: #ffe0e9;
+        }
+
+        .letter p {
+            font-size: 1.3em;
+            line-height: 1.8;
+            color: #fe9090;
+            font-family: 'Pacifico', cursive;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .letter p.heart {
+            font-size: 3em;
+            text-align: center;
+            margin: 20px 0;
+            animation: heartBeat 2s infinite;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .social-media a {
+            color: #ff9a9e;
+            font-size: 2em;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .social-media a:hover {
+            color: #fe9090;
+            animation: heartBeat 1.5s infinite;
+        }
+
+        footer {
+            background-color: #fe9090;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            border-top: 5px solid #ffe0e9;
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1.2em;
+            animation: pulse 2s infinite;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+
+            section {
+                padding: 40px 20px;
+            }
+
+            footer {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Justin Bieber ♥</h1>
+        <p>The Most Adorable Fan Page Ever!</p>
+        <div class="floating-heart"></div>
+        <div class="floating-justin"></div>
+    </header>
+    
+    <section>
+        <h2>Photo Gallery</h2>
+        <div class="gallery">
+            <img src="justin1.jpg" alt="Justin Bieber Image 1">
+            <img src="justin3.jpg" alt="Justin Bieber Image 2">
+            <img src="justin4.jpg" alt="Justin Bieber Image 3">
+            <img src="justin6.jpg" alt="Justin Bieber Image 4">
+        </div>
+    </section>
+
+    <section class="bio">
+        <h2>About Justin</h2>
+        <p>Justin Bieber is our one and only, the prince of pop, and the heartthrob who stole our hearts! From his early days singing "Baby" to now, Justin has grown into an incredible artist with a heart of gold. His music touches our souls, and his smile lights up our world. He's not just an artist; he's a dream come true!</p>
+        <p>Justin's journey from a small town in Canada to becoming a global superstar is nothing short of magical. He's been our guiding light through tough times and a reason to smile every day. Whether it's his iconic hair flip, his infectious laugh, or his incredible voice, Justin is always there to make everything better.</p>
+        <p>Beyond his music, Justin is a caring soul, always giving back to his fans and supporting causes close to his heart. His resilience, humility, and love for his Beliebers make him not just a superstar, but a true inspiration.</p>
+    </section>
+
+    <section class="music">
+        <h2>Top Hits</h2>
+        <ul>
+            <li>Baby</li>
+            <li>Sorry</li>
+            <li>Love Yourself</li>
+            <li>What Do You Mean?</li>
+            <li>Yummy</li>
+            <li>Peaches</li>
+            <li>Ghost</li>
+        </ul>
+    </section>
+
+    <section class="letter">
+        <h2>A Love Letter to Justin</h2>
+        <p class="heart">♥</p>
+        <p>Dear Justin,</p>
+        <p>From the very first time we heard your voice, we knew you were something special. Your music isn't just something we listen to—it's something we feel in our hearts. Your words have been our comfort, your melodies our escape. Through every note, every lyric, you've been there for us, and for that, we are eternally grateful.</p>
+        <p>Your smile is like sunshine on a cloudy day, and your kindness shines brighter than any star. You have given us more than just music; you've given us hope, joy, and the courage to be ourselves. You are a beautiful soul, inside and out, and we are so lucky to be part of your journey.</p>
+        <p>We love you, Justin, today and forever. Keep shining, keep inspiring, and never stop being you. You are our forever and always, and we will be your Beliebers, until the end of time.</p>
+        <p>With all our love,</p>
+        <p>Your Forever Beliebers</p>
+        <p class="heart">♥</p>
+    </section>
+
+    <section class="social-media">
+        <a href="https://twitter.com/justinbieber" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/justinbieber" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/JustinBieber" target="_blank">Facebook</a>
+    </section>
+
+    <footer>
+        <p>Made with ♥ by Beliebers</p>
+    </footer>
+</body>
+</html>
