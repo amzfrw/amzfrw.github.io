@@ -3,9 +3,446 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Amberly's Personal Webpage🤣</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&family=Pacifico&display=swap');
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes spinHeart {
+            0% {
+                transform: scale(1) rotate(0deg);
+            }
+            50% {
+                transform: scale(1.2) rotate(360deg);
+            }
+            100% {
+                transform: scale(1) rotate(720deg);
+            }
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #fff0f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            overflow-x: hidden;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header {
+            background: linear-gradient(135deg, #f8d7d8 30%, #cb9b9b 90%);
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 5px solid #ffe0e9;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        h1 {
+            font-size: 4em;
+            font-weight: 600;
+            margin: 0;
+            color: #ffffff;
+            font-family: 'Pacifico', cursive;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+            animation: pulse 2s infinite;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin: 10px 0 20px;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h2 {
+            font-size: 3em;
+            margin-bottom: 40px;
+            color: #ff9a9e;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: bounce 2s infinite;
+        }
+
+        .navbar {
+            width: 100%;
+            background: linear-gradient(135deg, #f8d7d8 30%, #cb9b9b 90%);
+            position: fixed;
+            z-index: 10;
+            display: flex;
+            justify-content: flex-end; /* Aligns buttons to the right */
+        }
+
+        .nav-button {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            align-content: center;
+            display: inline-block;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            margin: 0 10px; /* Space between buttons */
+        }
+
+        .nav-button:hover {
+            background-color: #f8d7d8; /* Change color on hover */
+            border-radius: 4px; /* Optional rounded corners */
+            color: #7d695c;
+        }
+ /* --------------------------------------------------------------------------------------------------------------------------------- */
+        .mainPic img {
+            border: 5px solid #544e527d;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cat img{
+            position: absolute;
+            top: 17%;
+            left: 2%;
+            width: 350px; 
+            height: 350px;
+            background-image: url('cat.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            transform: rotate(-5deg);
+        }
+
+        .catWithBag img {
+            position: absolute;
+            top: 58%;
+            left: 85%;
+            width: 100; 
+            height: 100;
+            background-image: url('catWithBag.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
+        }
+
+        .goomba img {
+            position: absolute;
+            top: 75%;
+            left: 62%;
+            width: 135px; 
+            height: 141.7px;
+            background-image: url('goomba.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            transform: rotate(7deg);
+        }
+
+        .mfsDonut img {
+            position: absolute;
+            top: 73%;
+            left: 0%;
+            width: 200px; 
+            height: 205px;
+            background-image: url('mfsDonut.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
+        }
+
+        .mfsShark img {
+            position: absolute;
+            top: 6%;
+            left: 76%;
+            width: 195px; 
+            height: 200px;
+            background-image: url('mfsShark.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            transform: rotate(-8deg);
+        }
+
+        .soloSylvanian img {
+            position: absolute;
+            top: 55%;
+            left: 27%;
+            width: 150px; 
+            height: 185px;
+            background-image: url('soloSylvanian.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            transform: rotate(-15deg);
+        }
+
+        .ghost img {
+            position: absolute;
+            top: 40%;
+            left: 69%;
+            width: 149.5px; 
+            height: 200px;
+            background-image: url('ghost.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
+        }
+
+        .dust img {
+            position: absolute;
+            top: 6%;
+            left: 0.5%;
+            width: 150px; 
+            height: 100;
+            background-image: url('dust.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            transform: rotate(10deg);
+        }
+
+        .miffy2 img {
+            position: absolute;
+            top: 82%;
+            left: 19%;
+            width: 100px; 
+            height: 135px;
+            background-image: url('miffy2.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            transform: rotate(10deg);
+        }
+
+        .miffy img {
+            position: absolute;
+            top: 32%;
+            left: 87%;
+            width: 190px; 
+            height: 140;
+            background-image: url('miffy.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            transform: rotate(-25deg);
+        }
+
+        .worm img {
+            position: absolute;
+            top: 87%;
+            left: 38%;
+            width: 190px; 
+            height: 140;
+            background-image: url('worm.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
+        }
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+        .new-section {
+            padding: 60px 20px;
+            background-color: white;
+            text-align: center;
+            border-top: 5px solid #cb9b9b;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .new-section h2 {
+            font-size: 2.5em;
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+
+        .new-section p {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .new-section-travels {
+            padding: 5px 0px;
+            background-color: white;
+            text-align: center;
+            border-top: 5px solid #cb9b9b;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 200px;
+            width: 100%; /* Full width of the page */
+        }
+
+        .new-section-travels h2 {
+            font-size: 2.5em;
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+
+        .new-section-travels p {
+            font-size: 1.2em;
+            color: #333;
+        }
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+    .collage {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 60vmin; /* Controls the height to make it more compact */
+    }
+
+    .collage img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }    
+
+    /* .batam_collage {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0px;
+        margin-right: auto;
+        width: 50%;
+        height: 60vmin; /* Controls the height to make it more compact */
+    /* } */
+
+    /* .batam_collage img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    } */ 
+
+    /* .japan_container { */
+        /* display: flex; Use Flexbox to align children horizontally */
+        /* justify-content: space-between; Space between the video and the collage */
+        /* align-items: center; Center-align items vertically if they have different heights */
+    /* } */
+
+    /* .japan_collage {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0px;
+        margin-left: auto;
+        width: 50%;
+        height: 60vmin; 
+        margin-bottom: 20px;
+    }
+
+    .japan_collage img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    } */
+
+    .japan_vid {
+        width: 50%; /* Adjust width to make the video smaller */
+        height: auto; /* Maintains the aspect ratio of the video */
+        margin: auto;
+    }
+    </style>
+
 </head>
 <body>
-    <h1>hi im amberly</h1>
+
+        <nav class="navbar">
+            <a href="#home" class="nav-button">Home</a>
+            <a href="#travel" class="nav-button">Travel</a>
+        </nav>
+
+        <section id="home">
+            <header>
+
+                <h1>Amberly's First Webpage</h1>
+                <p>Hi! I'm Amberly. I hate school. I love cats. I nap a lot.</p>
+            </header>
+        
+            <div>
+                <div class="mainPic">
+                    <img src="randompfp.jpg" width="400" height="300" style="transform: translate(0px,10px)">
+                </div>
+            
+                <div class="cat">
+                    <img src="cat.png">      
+                </div>
+            
+                <div class="catWithBag">
+                    <img src="catWithBag.png">  
+                </div>
+            
+                <div class="goomba">
+                    <img src="goomba.png">  
+                </div>
+            
+                <div class="mfsDonut">
+                    <img src="mfsDonut.png">  
+                </div>
+            
+                <div class="mfsShark">
+                    <img src="mfsShark.png" >  
+                </div>
+            
+                <div class="soloSylvanian">
+                    <img src="soloSylvanian.png">  
+                </div>
+            
+                <div class="miffy2">
+                    <img src="miffy2.png">  
+                </div>
+            
+                <div class="dust">
+                    <img src="dust.png">  
+                </div>
+            
+                <div class="miffy">
+                    <img src="miffy.png">  
+                </div>
+            
+                <div class="ghost">
+                    <img src="ghost.png">  
+                </div>
+            
+                <div class="worm">
+                    <img src="worm.png">  
+                </div>
+            </div>
+        </section>
+
+        <section id="travel" class="new-section-travels">
+            <h2>Travels</h2>
+            <p>I don't really have a favourite travel destination but I recently travelled to Batam and Osaka and had a lot of fun!</p>
+            
+            <div class="collage">
+                <img src="poolnarlie.jpg">
+                <img src="gayclub.jpg">
+                <img src="poolkaryn.jpg">
+                <img src="atv.jpg">
+                <img src="bananaboat.jpg">
+                <img src="sunsetkaryn.jpg">
+            </div>
+    
+            <div class="collage">
+                <img src="kitsune.jpg">
+                <img src="man.jpg">
+                <img src="nintendoworld.jpg">
+                <img src="prettysky.jpg">
+                <img src="studioghibli.jpg">
+                <img src="river.jpg">
+            </div>
+
+            <video loop autoplay muted controls class="japan_vid">
+                <source src="nintendo.mov" type="video/mp4">
+            </video>
+            
+        </section>
+
+        <section class="new-section">
+            <h2>Need to redo travel sect i hate it</h2>
+        </section>
+        
 </body>
 </html>
